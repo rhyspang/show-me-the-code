@@ -2,13 +2,13 @@
 # @Author: stoonejames
 # @Date:   2016-11-27 12:19:51
 # @Last Modified by:   stoonejames
-# @Last Modified time: 2016-11-27 17:13:54
+# @Last Modified time: 2017-03-02 19:44:44
 
 
 import re
 
 
-def countingWords(file_name):
+def counting_words(file_name):
     text = open(file_name, 'r').read()
     words = re.findall(r'[\w\']+', text)
     words = map(lambda s: s.lower(), words)
@@ -24,4 +24,4 @@ def countingWords(file_name):
 
 
 if __name__ == '__main__':
-    countingWords('words.txt')
+    counting_words('words.txt')
