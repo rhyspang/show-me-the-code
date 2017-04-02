@@ -1,3 +1,4 @@
+#!/usr/bin/env python3.5
 # -*- coding: utf-8 -*-
 # @Author: stoonejames
 # @Date:   2016-11-27 16:54:47
@@ -12,7 +13,7 @@ PATTERN = r'\d{3}'
 if __name__ == "__main__":
     items = os.listdir('.')
     dirs = filter(os.path.isdir, items)
-    print dirs
+    print(dirs)
 
     maxn = 0
     for dir in dirs:
