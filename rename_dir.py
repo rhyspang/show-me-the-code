@@ -16,7 +16,7 @@ pattern = re.compile(REG)
 
 dirs = filter(os.path.isdir, dirlist)
 dirs.sort()
-print dirs
+print(dirs)
 
 for d in dirs:
     if pattern.match(d):
