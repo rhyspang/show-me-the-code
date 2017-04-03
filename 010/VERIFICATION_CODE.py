@@ -63,8 +63,7 @@ def verification_code(chars=string.ascii_letters+string.digits,
             dot = code_img.getpixel((x, y))
             if dot == (255, 255, 255, 255) or dot == (0, 0, 0, 0):
                 code_draw.point((x, y), fill=random_color())
-        # 模糊化
-
+    # 模糊化
     code_img = code_img.filter(ImageFilter.BLUR)
     code_img.save('./verification_code.png', 'PNG')
     return code_img, code
